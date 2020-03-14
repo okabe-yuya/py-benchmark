@@ -1,11 +1,23 @@
 ## py-benchmark
-### description
+### Description
 This package can measure elapsed time(average time) of function too easy.  
-Result is output to log(info level).
+Result is output to log(info level).  
 
+Response is clean. Not override return values.  
+Not affect normal processing. but total execution time increase by benchmark  
+
+### Required setting
+Set logging level to info
+
+#### Sample
+```python
+formatter = '%(levelname)s : %(asctime)s : %(message)s'
+# set logging level 'INFO'
+logging.basicConfig(level=logging.INFO, format=formatter)
+```
 
 ### Usage
-※ example /src/funcs.py
+※ Example: execute benmark to /src/funcs.py
 
 1. import benchmark function
 ```python
@@ -26,3 +38,5 @@ target_func()
 INFO : 2020-03-14 19:10:52,033 : Start benchmark  target_func ...
 INFO : 2020-03-14 19:10:52,169 : Result: Average execution time -> 0.00001 s (total exec 100)
 ````
+
+too esay😂

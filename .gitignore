@@ -1,0 +1,8 @@
+# virtual env. create by python module of 'venv'
+.venv
+
+# jupyter notenbook
+notebook/
+
+# python cache
+__pycache__/
